@@ -1,12 +1,12 @@
 {
   "dut_id": "1",
-  "start_time_millis": 1660715408513,
-  "end_time_millis": 1660715409979,
+  "start_time_millis": 1661432011419,
+  "end_time_millis": 1661432011421,
   "outcome": "PASS",
   "outcome_details": [],
   "metadata": {
-    "test_name": "TS3Test",
-    "test_description": "TS3 example test using OpenHTF",
+    "test_name": "FileTransferAPILogTest",
+    "test_description": "Simple example test using OpenHTF and the File Transfer API for logging.",
     "test_version": "1.0.0",
     "config": {
       "plug_teardown_timeout_s": 0,
@@ -15,9 +15,7 @@
       "cancel_timeout_s": 2,
       "stop_on_first_failure": false,
       "capture_source": false,
-      "teardown_timeout_s": 30,
-      "frontend_throttle_s": 0.15,
-      "station_server_port": 4444
+      "teardown_timeout_s": 30
     }
   },
   "phases": [
@@ -27,14 +25,14 @@
         "timeout_s": 86400,
         "run_under_pdb": false
       },
-      "start_time_millis": 1660715402899,
-      "end_time_millis": 1660715408513,
+      "start_time_millis": 1661432011051,
+      "end_time_millis": 1661432011418,
       "attachments": {},
       "result": {
         "phase_result": "CONTINUE"
       },
       "outcome": "PASS",
-      "descriptor_id": 140353788841792,
+      "descriptor_id": 140110932527040,
       "name": "trigger_phase",
       "codeinfo": {
         "name": "",
@@ -43,159 +41,28 @@
       }
     },
     {
-      "measurements": {},
-      "options": {
-        "run_under_pdb": false
-      },
-      "start_time_millis": 1660715408515,
-      "end_time_millis": 1660715409033,
-      "attachments": {},
-      "result": {
-        "phase_result": "CONTINUE"
-      },
-      "outcome": "PASS",
-      "descriptor_id": 140353779831488,
-      "name": "setup_phase",
-      "codeinfo": {
-        "name": "",
-        "docstring": null,
-        "sourcecode": ""
-      }
-    },
-    {
       "measurements": {
-        "ANALOG_3V3": {
-          "name": "ANALOG_3V3",
+        "DIGITAL_TEST_1": {
+          "name": "DIGITAL_TEST_1",
           "outcome": "PASS",
           "validators": [
-            "3.2 <= x <= 3.4"
+            "'x' is equal to 'True'"
           ],
-          "units": {
-            "name": "volt DC",
-            "code": "2H",
-            "suffix": "V"
-          },
-          "measured_value": 3.348387
-        },
-        "ANALOG_5V": {
-          "name": "ANALOG_5V",
-          "outcome": "PASS",
-          "validators": [
-            "4.8 <= x <= 5.2"
-          ],
-          "units": {
-            "name": "volt DC",
-            "code": "2H",
-            "suffix": "V"
-          },
-          "measured_value": 5.167742
-        },
-        "ANALOG_12VA": {
-          "name": "ANALOG_12VA",
-          "outcome": "PASS",
-          "validators": [
-            "10 <= x <= 14"
-          ],
-          "units": {
-            "name": "volt DC",
-            "code": "2H",
-            "suffix": "V"
-          },
-          "measured_value": 13.186666
-        },
-        "ANALOG_3V3A": {
-          "name": "ANALOG_3V3A",
-          "outcome": "PASS",
-          "validators": [
-            "3.2 <= x <= 3.4"
-          ],
-          "units": {
-            "name": "volt DC",
-            "code": "2H",
-            "suffix": "V"
-          },
-          "measured_value": 3.296774
+          "measured_value": true
         }
       },
       "options": {
         "run_under_pdb": false
       },
-      "start_time_millis": 1660715409034,
-      "end_time_millis": 1660715409070,
+      "start_time_millis": 1661432011419,
+      "end_time_millis": 1661432011420,
       "attachments": {},
       "result": {
         "phase_result": "CONTINUE"
       },
       "outcome": "PASS",
-      "descriptor_id": 140353779831744,
-      "name": "analog_test_3V3",
-      "codeinfo": {
-        "name": "",
-        "docstring": null,
-        "sourcecode": ""
-      }
-    },
-    {
-      "measurements": {
-        "ANALOG_IN_1": {
-          "name": "ANALOG_IN_1",
-          "outcome": "PASS",
-          "validators": [
-            "5.15 <= x <= 5.25"
-          ],
-          "units": {
-            "name": "volt DC",
-            "code": "2H",
-            "suffix": "V"
-          },
-          "measured_value": 5.158771
-        },
-        "ANALOG_IN_2": {
-          "name": "ANALOG_IN_2",
-          "outcome": "PASS",
-          "validators": [
-            "2.45 <= x <= 2.55"
-          ],
-          "units": {
-            "name": "volt DC",
-            "code": "2H",
-            "suffix": "V"
-          },
-          "measured_value": 2.499353
-        }
-      },
-      "options": {
-        "run_under_pdb": false
-      },
-      "start_time_millis": 1660715409072,
-      "end_time_millis": 1660715409468,
-      "attachments": {},
-      "result": {
-        "phase_result": "CONTINUE"
-      },
-      "outcome": "PASS",
-      "descriptor_id": 140353779832000,
-      "name": "analog_test",
-      "codeinfo": {
-        "name": "",
-        "docstring": null,
-        "sourcecode": ""
-      }
-    },
-    {
-      "measurements": {},
-      "options": {
-        "run_under_pdb": false
-      },
-      "start_time_millis": 1660715409468,
-      "end_time_millis": 1660715409978,
-      "attachments": {},
-      "result": {
-        "phase_result": "CONTINUE"
-      },
-      "outcome": "PASS",
-      "descriptor_id": 140353779832256,
-      "name": "teardown_phase",
+      "descriptor_id": 140110937365056,
+      "name": "digital_test",
       "codeinfo": {
         "name": "",
         "docstring": null,
@@ -209,7 +76,7 @@
       "logger_name": "openhtf.core.phase_executor",
       "source": "phase_executor.py",
       "lineno": 247,
-      "timestamp_millis": 1660715402900,
+      "timestamp_millis": 1661432011051,
       "message": "Executing phase trigger_phase"
     },
     {
@@ -217,39 +84,23 @@
       "logger_name": "openhtf.plugs.user_input",
       "source": "user_input.py",
       "lineno": 204,
-      "timestamp_millis": 1660715402900,
-      "message": "Displaying prompt (d0883bf152224b1796f7e922bd12e569): \"Enter a DUT ID in order to start the test.\", Expects text input."
-    },
-    {
-      "level": 10,
-      "logger_name": "openhtf.output.servers.pub_sub",
-      "source": "pub_sub.py",
-      "lineno": 58,
-      "timestamp_millis": 1660715403728,
-      "message": "New subscriber from 127.0.0.1."
-    },
-    {
-      "level": 10,
-      "logger_name": "openhtf.output.servers.pub_sub",
-      "source": "pub_sub.py",
-      "lineno": 64,
-      "timestamp_millis": 1660715406566,
-      "message": "A client unsubscribed."
+      "timestamp_millis": 1661432011051,
+      "message": "Displaying prompt (013e4b7b89944653a8dc728c5ee0adb1): \"Enter a DUT ID in order to start the test.\", Expects text input."
     },
     {
       "level": 10,
       "logger_name": "openhtf.plugs.user_input",
       "source": "user_input.py",
       "lineno": 253,
-      "timestamp_millis": 1660715408513,
-      "message": "Responding to prompt (d0883bf152224b1796f7e922bd12e569): \"1\""
+      "timestamp_millis": 1661432011418,
+      "message": "Responding to prompt (013e4b7b89944653a8dc728c5ee0adb1): \"1\""
     },
     {
       "level": 10,
       "logger_name": "openhtf.util.threads",
       "source": "threads.py",
       "lineno": 160,
-      "timestamp_millis": 1660715408513,
+      "timestamp_millis": 1661432011418,
       "message": "Thread finished: <PhaseExecutorThread: (trigger_phase)>"
     },
     {
@@ -257,143 +108,47 @@
       "logger_name": "openhtf.core.phase_executor",
       "source": "phase_executor.py",
       "lineno": 274,
-      "timestamp_millis": 1660715408513,
+      "timestamp_millis": 1661432011419,
       "message": "Phase trigger_phase finished with result PhaseResult.CONTINUE"
     },
     {
       "level": 10,
-      "logger_name": "openhtf.test_record.3497:2b872a19e825448b:af0d0daed96d4e6e:1660715402898",
+      "logger_name": "openhtf.test_record.20275:419d235e25834334:7263c2b558794b04:1661432011050",
       "source": "test_executor.py",
       "lineno": 241,
-      "timestamp_millis": 1660715408515,
-      "message": "Handling phase setup_phase"
+      "timestamp_millis": 1661432011419,
+      "message": "Handling phase digital_test"
     },
     {
       "level": 10,
       "logger_name": "openhtf.core.phase_executor",
       "source": "phase_executor.py",
       "lineno": 247,
-      "timestamp_millis": 1660715408515,
-      "message": "Executing phase setup_phase"
+      "timestamp_millis": 1661432011419,
+      "message": "Executing phase digital_test"
     },
     {
       "level": 10,
       "logger_name": "openhtf.util.threads",
       "source": "threads.py",
       "lineno": 160,
-      "timestamp_millis": 1660715409032,
-      "message": "Thread finished: <PhaseExecutorThread: (setup_phase)>"
+      "timestamp_millis": 1661432011420,
+      "message": "Thread finished: <PhaseExecutorThread: (digital_test)>"
     },
     {
       "level": 10,
       "logger_name": "openhtf.core.phase_executor",
       "source": "phase_executor.py",
       "lineno": 274,
-      "timestamp_millis": 1660715409033,
-      "message": "Phase setup_phase finished with result PhaseResult.CONTINUE"
-    },
-    {
-      "level": 10,
-      "logger_name": "openhtf.test_record.3497:2b872a19e825448b:af0d0daed96d4e6e:1660715402898",
-      "source": "test_executor.py",
-      "lineno": 241,
-      "timestamp_millis": 1660715409033,
-      "message": "Handling phase analog_test_3V3"
-    },
-    {
-      "level": 10,
-      "logger_name": "openhtf.core.phase_executor",
-      "source": "phase_executor.py",
-      "lineno": 247,
-      "timestamp_millis": 1660715409034,
-      "message": "Executing phase analog_test_3V3"
-    },
-    {
-      "level": 10,
-      "logger_name": "openhtf.util.threads",
-      "source": "threads.py",
-      "lineno": 160,
-      "timestamp_millis": 1660715409070,
-      "message": "Thread finished: <PhaseExecutorThread: (analog_test_3V3)>"
-    },
-    {
-      "level": 10,
-      "logger_name": "openhtf.core.phase_executor",
-      "source": "phase_executor.py",
-      "lineno": 274,
-      "timestamp_millis": 1660715409071,
-      "message": "Phase analog_test_3V3 finished with result PhaseResult.CONTINUE"
-    },
-    {
-      "level": 10,
-      "logger_name": "openhtf.test_record.3497:2b872a19e825448b:af0d0daed96d4e6e:1660715402898",
-      "source": "test_executor.py",
-      "lineno": 241,
-      "timestamp_millis": 1660715409071,
-      "message": "Handling phase analog_test"
-    },
-    {
-      "level": 10,
-      "logger_name": "openhtf.core.phase_executor",
-      "source": "phase_executor.py",
-      "lineno": 247,
-      "timestamp_millis": 1660715409072,
-      "message": "Executing phase analog_test"
-    },
-    {
-      "level": 10,
-      "logger_name": "openhtf.util.threads",
-      "source": "threads.py",
-      "lineno": 160,
-      "timestamp_millis": 1660715409467,
-      "message": "Thread finished: <PhaseExecutorThread: (analog_test)>"
-    },
-    {
-      "level": 10,
-      "logger_name": "openhtf.core.phase_executor",
-      "source": "phase_executor.py",
-      "lineno": 274,
-      "timestamp_millis": 1660715409468,
-      "message": "Phase analog_test finished with result PhaseResult.CONTINUE"
-    },
-    {
-      "level": 10,
-      "logger_name": "openhtf.test_record.3497:2b872a19e825448b:af0d0daed96d4e6e:1660715402898",
-      "source": "test_executor.py",
-      "lineno": 241,
-      "timestamp_millis": 1660715409468,
-      "message": "Handling phase teardown_phase"
-    },
-    {
-      "level": 10,
-      "logger_name": "openhtf.core.phase_executor",
-      "source": "phase_executor.py",
-      "lineno": 247,
-      "timestamp_millis": 1660715409468,
-      "message": "Executing phase teardown_phase"
-    },
-    {
-      "level": 10,
-      "logger_name": "openhtf.util.threads",
-      "source": "threads.py",
-      "lineno": 160,
-      "timestamp_millis": 1660715409978,
-      "message": "Thread finished: <PhaseExecutorThread: (teardown_phase)>"
-    },
-    {
-      "level": 10,
-      "logger_name": "openhtf.core.phase_executor",
-      "source": "phase_executor.py",
-      "lineno": 274,
-      "timestamp_millis": 1660715409978,
-      "message": "Phase teardown_phase finished with result PhaseResult.CONTINUE"
+      "timestamp_millis": 1661432011420,
+      "message": "Phase digital_test finished with result PhaseResult.CONTINUE"
     },
     {
       "level": 10,
       "logger_name": "openhtf.plugs",
       "source": "__init__.py",
       "lineno": 458,
-      "timestamp_millis": 1660715409978,
+      "timestamp_millis": 1661432011420,
       "message": "Tearing down all plugs."
     },
     {
@@ -401,23 +156,15 @@
       "logger_name": "openhtf.util.threads",
       "source": "threads.py",
       "lineno": 160,
-      "timestamp_millis": 1660715409979,
+      "timestamp_millis": 1661432011420,
       "message": "Thread finished: <PlugTearDownThread: <class 'openhtf.plugs.user_input.UserInput'>>"
     },
     {
       "level": 10,
-      "logger_name": "openhtf.util.threads",
-      "source": "threads.py",
-      "lineno": 160,
-      "timestamp_millis": 1660715409979,
-      "message": "Thread finished: <PlugTearDownThread: BasePlug No-Op for <class '__main__.TS3Interface'>>"
-    },
-    {
-      "level": 10,
-      "logger_name": "openhtf.test_record.3497:2b872a19e825448b:af0d0daed96d4e6e:1660715402898",
+      "logger_name": "openhtf.test_record.20275:419d235e25834334:7263c2b558794b04:1661432011050",
       "source": "test_state.py",
       "lineno": 416,
-      "timestamp_millis": 1660715409979,
+      "timestamp_millis": 1661432011421,
       "message": "Finishing test execution normally with outcome PASS."
     },
     {
@@ -425,7 +172,7 @@
       "logger_name": "openhtf.util.threads",
       "source": "threads.py",
       "lineno": 160,
-      "timestamp_millis": 1660715409979,
+      "timestamp_millis": 1661432011421,
       "message": "Thread finished: TestExecutorThread"
     },
     {
@@ -433,8 +180,8 @@
       "logger_name": "openhtf.core.test_descriptor",
       "source": "test_descriptor.py",
       "lineno": 329,
-      "timestamp_millis": 1660715409979,
-      "message": "Test completed for TS3Test, outputting now."
+      "timestamp_millis": 1661432011421,
+      "message": "Test completed for FileTransferAPILogTest, outputting now."
     }
   ],
   "station_id": "LT2_5CG9322NW2",
